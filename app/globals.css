@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #0B0B0B;
+    --primary: #0B57A4;
+    --primary-foreground: #ffffff;
+    --secondary: #F2C100;
+    --muted: #F5F7FA;
+    --muted-foreground: #6B7280;
+    --accent: #FF7A00;
+    --border: #E5E7EB;
+    --radius: 12px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--primary); }
+
+  .hero-image {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .img-rounded { border-radius: 12px; }
+}
